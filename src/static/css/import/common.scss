@@ -1,0 +1,112 @@
+html{
+  font-size: 10px;
+  @media (max-width: 1440px) {
+    font-size: .7vw;
+  }
+  @media (max-width: 767px) {
+    font-size: 1vw;
+  }
+}
+body {
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+a{
+  color: currentColor;
+  transition: all .3s;
+}
+img {
+  max-width: 100%;
+}
+.text-center{
+  text-align: center;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.wrapper{
+  height: 100%;
+  overflow-x: hidden;
+}
+.container{
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    padding: 0 10px;
+  }
+}
+.d-flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.align-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.pink {
+  color: $pink;
+}
+.violet {
+  color: $violet;
+}
+.grey {
+  color: $grey;
+}
+.violet-light {
+  color: $violet-light;
+}
+.green {
+  color: $green
+}
+.yellow {
+  color: $yellow
+}
+.more-link {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: $pink;
+  }
+  span {
+    flex: none;
+    width: 15px;
+    height: 15px;
+    color: $pink;
+    font-size: 5px;
+    border-radius: 5px;
+    background-color: $grey-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+}
+.main-layout {
+  margin: 30px 0;
+  .content {
+    width: calc(100% - 160px);
+    padding-right: 30px;
+    @media (max-width: 1023px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .right-sidebar {
+    flex: none;
+    width: 160px;
+  }
+}
+
+
