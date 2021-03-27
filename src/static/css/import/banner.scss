@@ -1,9 +1,17 @@
 .text-banner {
   border: 2px solid $pink;
   background-color: #f4f2f6;
-  padding: 3rem;
+  padding: 3rem 1.5rem;
   position: relative;
   margin: 3rem 0;
+  &--small {
+    padding: 1.5rem;
+    margin: 0 0 3rem;
+    @media (max-width: 1023px){
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
   .h3 {
     margin-bottom: .5em;
   }

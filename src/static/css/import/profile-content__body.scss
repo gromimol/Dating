@@ -1,0 +1,127 @@
+.profile-content {
+  align-items: flex-start;
+}
+.profile-content__body {
+  width: calc(100% - 24rem);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @media(max-width: 1220px) {
+    width: calc(100% - 200px);
+  }
+  @media(max-width: 767px) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  & > .h3 {
+    margin-bottom: 1em;
+  }
+  & > p {
+    line-height: 1.4;
+    margin-bottom: 1em;
+    font-weight: 600;
+  }
+  .order-list {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.3;
+    margin: 30px 0;
+    padding-left: 20px;
+    list-style: decimal;
+    @media(max-width: 1023px) {
+      font-size: 14px;
+    }
+    li {
+      list-style: decimal;
+    }
+  }
+}
+.notice-block,
+.form-block__field{
+  border-radius: 10px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  @media(max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+  @media(max-width: 480px) {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .h3 {
+    margin-bottom: .5em;
+    line-height: 1.3;
+  }
+  p {
+    line-height: 1.4;
+    font-weight: 500;
+  }
+}
+.pay-by-card,
+.support-block{
+  margin-bottom: 5rem;
+  @media(max-width: 767px){
+    margin-bottom: 30px;
+  }
+  .h3,
+  .h4 {
+    margin-bottom: 1em;
+  }
+}
+.list {
+  li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    a {
+      color: #000;
+      &:hover {
+        color: $pink;
+      }
+    }
+    span{
+      padding-right: 5px;
+    }
+  }
+}
+.end-date {
+  background: $grey-light;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: .5em 1em;
+  margin: 3rem 0;
+  @media(max-width: 767px) {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+}
+.card-img-group {
+  margin-bottom: 25px;
+  img {
+    max-width: 70px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.form-block {
+  border-radius: 10px;
+}
+.form-block__field {
+  border-radius: 0;
+  margin-bottom: 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid $grey-bg;
+  }
+  @media (max-width: 767px){
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .profile-content {
+    display: block;
+  }
+  .form-block {
+    margin: 0 -10px;
+  }
+}

@@ -1,0 +1,36 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b AD Payments
+                    .text-banner.text-center.text-banner--small
+                        .h3.font-600 DISCOUNT CORONA
+                        p.text--lg.
+                            Because of Corona virus crisis - <span class="violet-light font-700">All Banners and TOP AD</span> prices now <span class="violet-light font-700">30% Discount!</span>
+                    p.font-500.
+                        Here you can see your recent PAYMENTS history, View Premium Membership Status or Purchase Premium
+                        Membership.
+                    p.font-500.
+                        Escorts can also buy TOP Escort Ad.
+                    .payments-types.d-flex.flex-wrap
+                        .payment-type.payment-type--history
+                            a.payment-type__content(href="#")
+                                span.icon-history
+                                .h3 My Payment <br>History
+                        .payment-type.payment-type--premium
+                            a.payment-type__content(href="#")
+                                span.icon-star_full
+                                .h3 Premium <br>Membership
+                        .payment-type.payment-type--top
+                            a.payment-type__content(href="#")
+                                span.icon-top
+                                .h3 Top Escort <br>AD
+                        .payment-type.payment-type--ads
+                            a.payment-type__content(href="#")
+                                span.icon-ads
+                                .h3 Banner <br>Advertisement
+        include ../includes/rightSidebar.pug

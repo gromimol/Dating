@@ -35,7 +35,9 @@
   margin-bottom: 3rem;
   @media (max-width: 767px) {
     font-size: 30px;
-
+  }
+  @media (max-width: 350px) {
+    font-size: 25px;
   }
 }
 .footer__top__right {
@@ -49,6 +51,10 @@
     margin-bottom: 20px;
     padding: 20px;
   }
+  @media (max-width: 350px) {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }
 .footer__top__right__item {
   font-size: 3.4rem;
@@ -58,6 +64,9 @@
   }
   @media (max-width: 440px) {
     font-size: 22px;
+  }
+  @media (max-width: 350px) {
+    font-size: 18px;
   }
   &:not(:last-child) {
     margin-bottom: 3rem;
@@ -81,6 +90,10 @@
       height: 40px;
       font-size: 20px;
       margin-right: 10px;
+    }
+    @media (max-width: 350px) {
+      width: 35px;
+      height: 35px;
     }
   }
   b {

@@ -1,0 +1,73 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b Premium Membership - Card Payment
+                    p.font-500.
+                        You can pay by CREDIT or DEBIT card, if your card has visa or master card logo:
+                    .card-img-group.d-flex.flex-wrap
+                        img(src="img/icons/master-card-gray.png")
+                        img(src="img/icons/visa-grey.png")
+                    .form-block.grey-light-bg
+                        form(action="#")
+                            .form-block__field
+                                .h3.text-uppercase.font-700 CARD PAYMENT FORM
+                                p.mb-2 TS-Dating.com payment for:<br> <span class="violet-light font-700">1 month Premium Membership</span>
+                                .input-wrapper
+                                    span Advertisement:
+                                    select.select-input
+                                        option 1 month Premium Membership
+                                        option 2 month Premium Membership
+                                        option 3 month Premium Membership
+                                p Amount: <span class="h4 violet-light font-700">€19.95</span>
+                            .form-block__field
+                                .h4.font-700.mb-2 Credit Card Data:
+                                .input-wrapper
+                                    span Name on the Card:
+                                    input.input(type="text")
+                                .input-wrapper
+                                    span Card Number::
+                                    input.input(type="text")
+                                .input-wrapper-row.input-wrapper--lt.d-flex.flex-wrap
+                                    .input-wrapper
+                                        span Expiration Date
+                                        select.select-input
+                                            option  2021
+                                            option  2022
+                                            option  2023
+                                            option  2024
+                                    .input-wrapper
+                                        span (Year/month):
+                                        select.select-input
+                                            option 01
+                                            option 02
+                                            option 03
+                                            option 04
+                                            option 05
+                                            option 06
+                                            option 08
+                                            option 09
+                                            option 10
+                                            option 11
+                                            option 12
+
+                                .input-wrapper--lt
+                                    .input-wrapper
+                                        span Security code (CVC):
+                                        input.input(type="password")
+                            .form-block__field
+                                .text-banner.text-banner--small
+                                    p.
+                                        <span class="violet-light text-uppercase font-700">WARNING: </span><br>
+                                        Never give anyone your CREDIT OR DEBIT CARD infomation in WhatsApp! Even if someone says they will close your account, dont give him your card information!
+                                input.btn.btn--red-gradient.btn--lg.mb-3(type="submit" value="Pay With Card")
+                                p.mb-1
+                                    b After purchase, your credit card statement will say: CRD.LT/*TSD MEDIA
+                                p.mb-1
+                                    b NOTICE: We don't store your credit card information in our server or databases
+
+        include ../includes/rightSidebar.pug

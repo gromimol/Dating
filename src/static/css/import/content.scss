@@ -3,6 +3,18 @@
     margin-bottom: 3rem;
     align-items: flex-start;
   }
+  &--inner {
+    @media (max-width: 1023px) {
+      .container.d-flex {
+        display: block;
+      }
+    }
+    @media (max-width: 767px) {
+      .left-content {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 .tabs-wrapper,

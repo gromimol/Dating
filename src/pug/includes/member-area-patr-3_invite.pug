@@ -1,0 +1,18 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b Invite New Members
+                    p.font-500.
+                        Here you can invite new members to this site.
+                    form(action="#")
+                        .input-wrapper
+                            span E-mail address:
+                            input.input(type="email")
+                        input.btn.btn--violet.btn--lg(type="submit" value="Invite New Members")
+        include ../includes/rightSidebar.pug
+

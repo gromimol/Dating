@@ -18,3 +18,32 @@
     }
   }
 }
+.main-layout--inner {
+  .right-sidebar {
+    @media (max-width: 1023px) {
+      display: block;
+      width: calc(100% + 40px);
+      position: relative;
+      left: -20px;
+    }
+    @media (max-width: 767px) {
+      width: calc(100% + 20px);
+      left: -10px;
+      padding: 10px;
+    }
+  }
+  .right-sidebar__items {
+    @media (max-width: 1023px) {
+      display: flex;
+      overflow-x: auto;
+      margin: 0;
+      .right-sidebar__item {
+        display: block;
+        width: 130px;
+        flex: none;
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

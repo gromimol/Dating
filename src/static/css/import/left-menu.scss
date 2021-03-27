@@ -1,0 +1,109 @@
+.left-sidebar__menu {
+  margin-top: 15px;
+  li {
+    margin-bottom: 1px;
+    a {
+      padding: 15px;
+      color: $violet;
+      font-size: 14px;
+      position: relative;
+      &::after {
+        content: '';
+        width: calc(100% - 40px);
+        position: absolute;
+        left: 20px;
+        bottom: -1px;
+        height: 1px;
+        background: $grey-light;
+      }
+      span[class^='icon-'] {
+        margin-right: 10px;
+      }
+      &:hover,
+      &.active{
+        color: $pink;
+        background-color: $grey-light;
+        &::after {
+          background-color: #fff;
+        }
+        @media (max-width: 1220px) {
+          background-color: transparent;
+        }
+      }
+    }
+    &:first-child {
+      a {
+        color: $violet-light;
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+    &:last-child {
+      a {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.menu__item__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  .count {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 3px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #ef019e;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .left-sidebar__menu {
+    display: flex;
+    align-items: flex-end;
+    overflow-x: auto;
+    border-top: 1px solid $grey-bg;
+    border-bottom: 1px solid $grey-bg;
+    padding: 15px 0;
+    margin-top: 0;
+    li {
+      a {
+        padding: 0 20px 0 0;
+        display: block;
+        text-align: center;
+        position: relative;
+        span[class^='icon-'] {
+          font-size: 20px;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .menu__item__text {
+    white-space: nowrap;
+    font-size: 12px;
+    margin-top: 8px;
+    .count {
+      min-width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+    }
+  }
+}

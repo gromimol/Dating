@@ -1,0 +1,136 @@
+.moddels-list {
+  margin-top: 30px;
+  .models-card {
+    width: 25%;
+    margin-bottom: 20px;
+    @media (max-width: 1220px) {
+      width: 33.333%;
+    }
+    @media (max-width: 480px) {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+  }
+}
+.models-card {
+  display: block;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  &--circle {
+    .models-card__img {
+      width: 17rem;
+      height: 17rem;
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+      @media (max-width: 1220px) {
+        width: 20rem;
+        height: 20rem;
+      }
+      @media (max-width: 767px) {
+        width: 24rem;
+        height: 24rem;
+      }
+      @media (max-width: 480px) {
+        width: 150px;
+        height: 150px;
+      }
+      @media (max-width: 360px) {
+        width: 130px;
+        height: 130px;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.models-card__img {
+  position: relative;
+  @media(max-width: 480px) {
+    height: 220px;
+  }
+  img {
+    width: 100%;
+    @media(max-width: 480px) {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .top-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+.models-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 15px;
+  z-index: 1;
+  position: relative;
+  .btn {
+    margin-top: 8px;
+  }
+}
+.top-label {
+  justify-content: flex-end;
+  span {
+    font-size: 17px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
+.models-card__data {
+  text-align: center;
+  .name {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    justify-content: center;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  .status {
+    flex: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 4px;
+    &.online {
+      background-color: $green;
+    }
+    &.offline {
+      background-color: $grey;
+    }
+  }
+  span[class^="icon-"] {
+    font-size: 14px;
+    margin-right: 4px;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  .type {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .location {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  .model-raiting {
+    font-size: 12px;
+  }
+  .raiting-content {
+    background: $green;
+  }
+}
