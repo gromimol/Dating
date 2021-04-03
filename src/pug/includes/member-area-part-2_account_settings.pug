@@ -1,0 +1,100 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3.mb-2
+                        b Account Settings
+                    p.mb-2.font-500 Here you can change your account options or delete your account.
+                    form(action="#")
+                        .account-setting-block.mb-3
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 E-mail:
+                                .account-setting-block__item.font-700 estoniaguy2@gmail.com
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 New message notification via e-mail?
+                                .account-setting-block__item
+                                    .check
+                                        input(type="checkbox" id="id-1" checked)
+                                        label(for="id-1")
+                                            span.icon-check
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 Send message content to my email
+                                .account-setting-block__item
+                                    .check
+                                        input(type="checkbox" id="id-2" checked)
+                                        label(for="id-2")
+                                            span.icon-check
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 Send friend request notices to my e-mail
+                                .account-setting-block__item
+                                    .check
+                                        input(type="checkbox" id="id-3")
+                                        label(for="id-3")
+                                            span.icon-check
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 Show views counter on my profile
+                                .account-setting-block__item
+                                    .check
+                                        input(type="checkbox" id="id-4" checked)
+                                        label(for="id-4")
+                                            span.icon-check
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600 My timezone
+                                .account-setting-block__item
+                                    .input-wrapper.input-wrapper--extra-small.d-flex.align-center
+                                        span GMT
+                                        select.select-input
+                                            option +12
+                                            option +11
+                                            option +10
+                                            option +9
+                            .account-setting-block__row.d-flex.align-center
+                                .account-setting-block__item.grey.font-600: span Hide my homepage(<a href="#" class="link pink">www.ts-dating.com/testescort</a>)
+                                .account-setting-block__item
+                                    .check
+                                        input(type="checkbox" id="id-6")
+                                        label(for="id-6")
+                                            span.icon-check
+                        input(type="submit" value="Updata / Save").btn.btn--violet.btn--lg.mb-3
+                    .h3.mb-2.font-600 Deactivate Account
+                    .d-flex.flex-wrap.align-center.h4.font-600.account-option-row.mb-2 Your Account is <span class="badge badge--green ml-1">Active</span> <a href="#" class="btn btn--violet btn--small ml-2">Deactivate Account</a>
+                    .h3.mb-2.font-600 Block Countries
+                    p.font-600 Here you can BLOCK people from countries seeing your profile and sending you messages
+                    .account-setting-block.mb-4
+                        .account-setting-block__row.d-flex.align-center
+                            .account-setting-block__item.grey.font-600 Country:
+                            .account-setting-block__item
+                                .account-setting-block__item__form__row.d-flex.align-center
+                                    .input-wrapper
+                                        select.select-input(id="country")
+                                            option Albania
+                                            option USA
+                                            option France
+                                            option Canada
+                                    input.btn.btn--violet.btn--small.ml-1(type="submit" value="Block")
+                        .account-setting-block__row.d-flex.align-center
+                            .account-setting-block__item.grey.font-600 Blocked countries:
+                            .account-setting-block__item
+                                .block-country-list.d-flex.flex-wrap
+                                    .label Albania <span class="delete"></span>
+                                    .label USA <span class="delete"></span>
+                    .h3.mb-2.font-600 Change Password
+                    form(action="#").mb-3
+                        .input-wrapper
+                            span Your current password:
+                            input.input(type="password")
+                        .input-wrapper
+                            span New password:
+                            span.grey.text--small (6 letters minimum)
+                            input.input(type="password")
+                        .input-wrapper
+                            span Confirm New Password:
+                            span.grey.text--small (6 letters minimum)
+                            input.input(type="password")
+                        input(type="submit" value="Change Password").btn.btn--violet.btn--lg
+                    .h3.mb-2.font-600 Removal of Profile
+                    p.font-600 Account will be removed permanently, not possible to restore. <a href="#" class="btn btn--violet btn--small">Delete My Profile</a>
+        include ../includes/rightSidebar.pug

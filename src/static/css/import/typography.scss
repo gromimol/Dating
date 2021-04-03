@@ -30,6 +30,9 @@ h4, .h4 {
   @media (max-width: 990px) {
     font-size: 18px;
   }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 .font-200{
   font-weight: 200;
@@ -74,4 +77,10 @@ p {
   @media (max-width: 1023px) {
     font-size: 14px;
   }
+}
+.text--small {
+  font-size: 12px;
+}
+.text-italic {
+  font-style: italic;
 }

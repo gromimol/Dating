@@ -1,0 +1,208 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b My Photos
+                    p.text-uppercase: b PHOTO UPLOADING RULES
+                    p 1. <b>Upload</b> only photos of YOURSELF
+                    p 2. <b>DO NOT UPLOAD</b> PHOTOS featuring underage, teens, illegal drugs, cartoons, animations, drawings, fake photos, act of violence or copyrighted photos. This is a dating website!
+                    p 3. <b class="violet-light">ONLY CLEAN PHOTOS!</b> - <b>NO phone numbers, text or logomarks on photos.</b>
+                    p 4. <b>Adult/XXX photos</b> are allowed, however <b>close-up photos</b> from single body parts are <b>will not be approved</b>. Adult photos will not participiate on <a href="#" class="pink font-700 link">Photo Rating</a>
+                    p 5. All uploaded photos will be <b>moderated</b> and require a <b>moderators approval</b> before appering online in your profile.
+                    p 6. You need to upload minimum of <b>3 photos</b>! Upload at least <b>1 photo</b> where your <b>face is clearly shown</b> - it's a requirements for <b>escort profile</b>!
+                    p.text-italic <b>If you do not follow photo uploading rules, your account can be <span class="violet-light">BLOCKED</span></b>
+                    .text-banner.text-banner--small.mb-3
+                        p.grey.font-700 Verification status: <span class="violet-light">Photo Verification FAILED!</span>
+                        p.grey.font-700 Verification status: <span class="green">Photo Verification SUCCESS!</span>
+                        p.grey.font-700 Visit: <a href="#" class="pink link">Photo Verification Page</a>
+                    .models-card.models-card--row.grey-light-bg.mb-4.mt-4
+                        .models-card__img
+                            img(src='img/photos/photo-1.jpg')
+                        .models-card__body
+                            .models-card__data
+                                .model-raiting.d-flex.align-center.grey.justify-center.mb-1.font-700 Photo Rating <span class="raiting-content font-400">Activated</span>
+                                .models-card__data__item.grey.font-700.mb-1 Rating: <span class="black">4.67</span>   |   Votes: <span class="black">29</span>
+                                .models-card__data__item.font-700.mb-1 <a href="#" class="pink link">Voting Statistics</a>
+                                .models-card__data__item.font-700
+                                    span.font-600 Activate rating? <br>
+                                    .btns-group.d-flex
+                                        a.btn.btn--small.btn--violet(href="#") Yes
+                                        a.btn.btn--small.btn--violet(href="#") No
+                    .tabs-wrapper.mb-4
+                        .top-row.d-flex.align-center.justify-between
+                            .h4.font-600.d-flex.align-center Photos <a href="#" class="btn btn--small btn--violet ml-1">Re-order Photos</a>
+                            ul.tab-list.d-flex
+                                li.active Regular Photos <span class="grey">34</span
+                                li XXX-Adult Photos <span class="grey">58</span
+                        .tab-content.active
+                            .photos-block
+                                .photos-select
+                                    input(type="checkbox" id="id-1" checked)
+                                    label(for="id-1")
+                                        img(src="img/photos/photo-2.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-2" checked)
+                                    label(for="id-2")
+                                        img(src="img/photos/photo-3.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-3")
+                                    label(for="id-3")
+                                        img(src="img/photos/photo-4.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-4" checked)
+                                    label(for="id-4")
+                                        img(src="img/photos/photo-5.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-5")
+                                    label(for="id-5")
+                                        img(src="img/photos/photo-1.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-6")
+                                    label(for="id-6")
+                                        img(src="img/photos/photo-3.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-7")
+                                    label(for="id-7")
+                                        img(src="img/photos/photo-2.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-8")
+                                    label(for="id-8")
+                                        img(src="img/photos/photo-3.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                            a.btn.btn--violet.btn--lg(href="#") Delete Selected
+                        .tab-content
+                            .photos-block
+                                .photos-select
+                                    input(type="checkbox" id="id-9" checked)
+                                    label(for="id-9")
+                                        img(src="img/photos/photo-5.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-10")
+                                    label(for="id-10")
+                                        img(src="img/photos/photo-4.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-11" checked)
+                                    label(for="id-11")
+                                        img(src="img/photos/photo-3.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-12")
+                                    label(for="id-12")
+                                        img(src="img/photos/photo-2.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-13")
+                                    label(for="id-13")
+                                        img(src="img/photos/photo-1.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-14")
+                                    label(for="id-14")
+                                        img(src="img/photos/photo-2.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-15")
+                                    label(for="id-15")
+                                        img(src="img/photos/photo-3.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                                .photos-select
+                                    input(type="checkbox" id="id-16")
+                                    label(for="id-16")
+                                        img(src="img/photos/photo-5.jpg" alt="")
+                                        .top-label.d-flex.justify-between
+                                            span.check
+                                                span.icon-check
+                                            span.icon-check_in_circle.green
+                                        span.photo-title.pink.font-700 Set As Default
+                            a.btn.btn--violet.btn--lg(href="#") Delete Selected
+                    .h3.text-uppercase.mb-2: b Upload a Photo
+                    ul.list.font-500.mb-2
+                        li - Free members can upload <b>20 photos</b>
+                        li - <a href="#" class="pink link font-700">Premium members</a> can upload up to <b>200 photos</b>.
+                        li - <b>JPG, GIF</b> or <b>PGN</b> photo format is allowed
+                        li - Photo witdth or height must be over <b>300 pixels</b>
+                    form(action="#")
+                        .input-wrapper
+                            span Choose a Photo :
+                            span.grey.font-400 (JPG, GIF, PNG)
+                            .file.mb-3
+                                input(type="file" id="file")
+                                label(for="file")
+                                    span.file-name File it's not choose...
+                                    span.file-btn Choose File
+                        input.btn.btn--red-gradient.btn--lg.text-center(value="Upload" type="submit")
+
+        include ../includes/rightSidebar.pug

@@ -49,6 +49,54 @@
       }
     }
   }
+  &--row {
+    display: flex;
+    .models-card__body {
+      flex-grow: 1;
+    }
+    .models-card__img {
+      width: 120px;
+      line-height: 0;
+      @media(max-width: 1023px) {
+        width: 100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 0 0 10px;
+      }
+    }
+    .models-card__data {
+      text-align: left;
+      .model-raiting {
+        padding-left: 0;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+.models-card--row.models-card--circle {
+  align-items: center;
+  padding: 0 1.5rem;
+  .models-card__img {
+    width: 100px;
+    height: 100px;
+    flex: none;
+  }
+}
+.btns-group {
+  .btn {
+    margin-bottom: .5rem;
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+}
+.models-card__data__item {
+  @media(max-width: 1023px) {
+    font-size: 12px;
+  }
 }
 .models-card__img {
   position: relative;

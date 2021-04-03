@@ -8,6 +8,9 @@
   @media(max-width: 1220px) {
     width: calc(100% - 200px);
   }
+  @media(max-width: 1023px) {
+    padding-right: 0;
+  }
   @media(max-width: 767px) {
     width: 100%;
     padding-left: 0;
@@ -77,6 +80,9 @@
       &:hover {
         color: $pink;
       }
+      &.pink {
+        color: $pink;
+      }
     }
     span{
       padding-right: 5px;
@@ -123,5 +129,119 @@
   }
   .form-block {
     margin: 0 -10px;
+  }
+}
+
+.account-setting-block__row {
+  border-bottom: 1px solid #d4d1d7;
+}
+.account-setting-block__item {
+  width: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    padding-right: 2rem;
+  }
+  .check {
+    @media (max-width: 480px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input {
+      display: none;
+      &:checked + label {
+        background-color: $pink;
+        border-color: $pink;
+      }
+    }
+    label {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid #d4d1d7;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .icon-check {
+        color: #fff;
+        font-size: 10px;
+      }
+    }
+  }
+  .input-wrapper {
+    margin-bottom: 0;
+  }
+}
+.account-option-row {
+  @media(max-width: 480px) {
+    display: block;
+    .btn {
+      display: table;
+      margin-left: 0 !important;
+      margin-top: 10px;
+    }
+  }
+}
+.label {
+  display: inline-flex;
+  align-items: center;
+  background-color: #d4d1d7;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 8px 10px;
+  font-weight: 500;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  .delete {
+    width: 14px;
+    height: 14px;
+    flex: none;
+    position: relative;
+    cursor: pointer;
+    top: -1px;
+    margin-left: 4px;
+    &::before,
+    &::after{
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: $pink;
+      position: absolute;
+      left: 0;
+      top: 50%;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.account-setting-block__item__form__row {
+  .input-wrapper{
+    width: 200px;
+  }
+  .btn--small {
+    min-height: 40px;
+  }
+}
+.account-setting-block__item__form__row {
+  @media(max-width: 480px) {
+    display: block;
+    width: 100%;
+    .input-wrapper {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .btn {
+      margin-left: 0 !important;
+    }
   }
 }

@@ -3,7 +3,7 @@ module.exports = function () {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "member-area-part-3_banner_card_payment.html"
+                index: "member-area-part-2_account_settings.html"
             }
         });
     });

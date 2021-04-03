@@ -77,6 +77,10 @@
     padding: 10px 20px;
     height: auto;
     min-width: auto;
+    @media(max-width: 480px) {
+      padding: 8px 15px;
+      min-height: auto;
+    }
   }
   &--full-width {
     width: 100%;

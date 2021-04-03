@@ -19,6 +19,14 @@
     width: 170px;
   }
 }
+.models-circle-slider--four-items {
+  .models-slider__item {
+    width: 210px;
+    @media (max-width: 480px) {
+      width: 170px;
+    }
+  }
+}
 .prev-arrow,
 .next-arrow {
   position: absolute;

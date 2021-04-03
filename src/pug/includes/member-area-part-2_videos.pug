@@ -1,0 +1,44 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b My Videos
+                    p.mb-3 Here you can post your videos. Videos will be visible on your profile as soon as they are approved.<br /> <b>Please post only videos that belong to you!</b>
+                    .h4.text-uppercase.mb-1: b ADD YOUR VIDEO
+                    p.mb-1 You can post videos from these websites:
+                    p.mb-3 <a href="# class="pink link">youtube.com </a> | <a href="# class="pink link">vimeo.com  </a> | <a href="# class="pink link">dailymotion.com </a> | <a href="# class="pink link">xvideos.com </a> |
+                    form(action="#").mb-4
+                        .input-wrapper.w-100
+                            span Video link:
+                            span.text--small.grey.text-link Example: <span class="pink">http://www.xvideos.com/video53302613/busty_ts_babe_aubrey_kate_barebacks_guy</span>
+                            input.input(type="text")
+                        input(type="submit" value="Add Video").btn.btn--red-gradient.btn--lg
+                    .video-block.mb-2
+                        .video-block__top.d-flex.justify-between.align-center
+                            .video-block__top__links.mb-1
+                                p.text--small.font-500 Video link <span class="badge badge--yellow">Pending</span>
+                                p.text--small.grey.font-500.text-link http://www.xvideos.com/video53302613/busty_ts_babe_aubrey_kate_barebacks_guy
+                            a.btn.btn--violet.btn--small(href="#") Delete
+                        .video-content
+                            img(src="img/photos/video-poster.jpg" alt="")
+                    .video-block.mb-2
+                        .video-block__top.d-flex.justify-between.align-center
+                            .video-block__top__links.mb-1
+                                p.text--small.font-500 Video link <span class="badge badge--green">Uploaded</span>
+                                p.text--small.grey.font-500.text-link http://www.xvideos.com/video53302613/busty_ts_babe_aubrey_kate_barebacks_guy
+                            a.btn.btn--violet.btn--small(href="#") Delete
+                        .video-content
+                            img(src="img/photos/video-poster.jpg" alt="")
+                    .video-block.mb-2
+                        .video-block__top.d-flex.justify-between.align-center
+                            .video-block__top__links.mb-1
+                                p.text--small.font-500 Video link <span class="badge badge--red">Failed</span>
+                                p.text--small.grey.font-500.text-link http://www.xvideos.com/video53302613/busty_ts_babe_aubrey_kate_barebacks_guy
+                            a.btn.btn--violet.btn--small(href="#") Delete
+                        .video-content
+                            img(src="img/photos/video-poster.jpg" alt="")
+        include ../includes/rightSidebar.pug

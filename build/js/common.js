@@ -95,4 +95,16 @@ $(document).ready(function () {
         $(this).closest('.tabs-wrapper').find('.tab-content').removeClass('active')
         $(this).closest('.tabs-wrapper').find('.tab-content').eq(index).addClass('active')
     })
+
+    // input file
+    $('.file input:file').change(
+        function(e){
+            $(this).parent().find('.file-name').text(e.target.files[0].name)
+    });
+
+    // delete label
+    $('.label .delete').on('click', function () {
+        $(this).parent().remove();
+    })
+
 });

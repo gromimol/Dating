@@ -1,0 +1,21 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3.mb-2
+                        b Ask Help
+                    p.mb-3
+                        If you have any questions or problems about this website then send them here to webmaster.
+                        Before sending your question, please read <a href="#" class="pink link">Frequently Asked Questions</a> because your question may already been answered there
+                    .h4.mb-2: b Help Request
+                    p.grey Sent to: <span class="pink font-700">ADMIN</span>
+                    p.grey Subject: <span class="black">Help request!</span>
+                    form(action="#")
+                        .input-wrapper.w-100
+                            span Problem:
+                            textarea.input
+                        input(type="submit" value="Send Message").btn.btn--violet.btn--lg
+        include ../includes/rightSidebar.pug

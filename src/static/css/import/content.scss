@@ -18,11 +18,6 @@
 }
 
 .tabs-wrapper,
-.tab-content,
-.models-slider {
-  width: 100%;
-}
-
 .models-slider {
   width: 100%;
 }
@@ -36,6 +31,14 @@
   @media (max-width: 767px) {
     display: block;
   }
+  &--lg {
+    @media (max-width: 1024px) {
+      display: block;
+      .tab-list {
+        margin-top: 15px;
+      }
+    }
+  }
 
   .h4 {
     span {
@@ -47,14 +50,37 @@
         margin: 5px 0;
       }
     }
+    &.d-flex {
+      @media (max-width: 1023px) {
+        display: block;
+        .btn {
+          margin-left: 0 !important;
+          margin-top: 1rem;
+        }
+      }
+    }
   }
 }
-
+.top-row__left {
+  .input-wrapper {
+    margin-bottom: 0;
+    margin-left: 1rem;
+    width: 250px;
+    @media (max-width: 1023px) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 1023px) {
+    display: block;
+  }
+}
 .tab-list {
   font-size: 14px;
   font-weight: 700;
   @media (max-width: 767px) {
     margin: 20px 0 10px;
+    overflow-x: auto;
   }
   li {
     padding: 0 1em .6em;
@@ -62,6 +88,9 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: all .3s;
+    @media (max-width: 1023px) {
+      white-space: nowrap;
+    }
     @media (max-width: 767px) {
       padding: 0 .5em .5em;
     }
@@ -76,18 +105,75 @@
     &.active {
       color: $pink;
       border-bottom-color: $pink;
+      .grey {
+        color: $pink;
+      }
+    }
+  }
+  &--grey-bg {
+    background-color: $grey-light;
+    border-radius: 10px 10px 0 0 ;
+    li {
+      padding: 2rem;
+      @media (max-width: 767px) {
+        padding: 10px 5px;
+      }
     }
   }
 }
 
 .tab-content {
+  width: 0;
   height: 0;
   overflow: hidden;
   visibility: hidden;
 
   &.active {
+    width: 100%;
     height: auto;
     visibility: visible;
     overflow: visible;
   }
+}
+.video-content {
+  iframe, video {
+    width: 100%;
+  }
+}
+.badge {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 5px;
+  &--yellow {
+    background-color: $yellow;
+  }
+  &--green {
+    background-color: $green;
+  }
+  &--red {
+    background-color: $pink;
+  }
+}
+.video-block__top {
+  @media (max-width: 767px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__links {
+    padding-right: 20px;
+    width: calc(100% - 100px);
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+.text-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
 }
