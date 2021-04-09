@@ -245,3 +245,45 @@
     }
   }
 }
+
+.profile-item-block {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #d4d1d7;
+  @media(max-width: 767px) {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+  .profile-item {
+    width: 47%;
+    @media(max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .social {
+      padding-right: 0;
+      margin-right: 0;
+      border: none;
+      li {
+        a:hover {
+          color: $violet-light
+        }
+      }
+    }
+    .img-group {
+      padding-left: 5px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+p {
+  a.black {
+    &:hover {
+      color: $pink;
+    }
+  }
+}

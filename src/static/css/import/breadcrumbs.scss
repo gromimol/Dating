@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 12px;
+  li {
+    color: $violet;
+    font-weight: 600;
+    &:not(:last-child) {
+      margin-right: 7px;
+      &::after {
+        content: '\e902';
+        font-family: 'icomoon' !important;
+        font-size: 9px;
+        color: $pink;
+        margin-left: 7px;
+      }
+    }
+    &:last-child {
+      color: $pink;
+      a {
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+    a {
+      &:hover {
+        color: $pink
+      }
+    }
+  }
+}

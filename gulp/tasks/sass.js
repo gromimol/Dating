@@ -14,10 +14,10 @@ module.exports = function () {
             // .pipe($.gp.sourcemaps.write('./'))
             .pipe($.gulp.dest('build/css/'))
             // Минифицированная версия
-            .pipe($.gp.sass({ outputStyle: 'compressed' }))
-            .pipe($.gp.rename('main.min.css'))
-            .pipe($.gp.sourcemaps.write('./'))
-            .pipe($.gulp.dest('build/css/'))
+            // .pipe($.gp.sass({ outputStyle: 'compressed' }))
+            // .pipe($.gp.rename('main.min.css'))
+            // .pipe($.gp.sourcemaps.write('./'))
+            // .pipe($.gulp.dest('build/css/'))
             .on('end', $.bs.reload);
 
         // .pipe($.bs.reload({

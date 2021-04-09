@@ -72,15 +72,20 @@ p {
     }
   }
   &.text--small {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   @media (max-width: 1023px) {
     font-size: 14px;
   }
 }
 .text--small {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .text-italic {
   font-style: italic;
+}
+.text-block {
+  p {
+    margin-bottom: 1.5em;
+  }
 }

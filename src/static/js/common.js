@@ -88,12 +88,14 @@ $(document).ready(function () {
         variableWidth: true,
     })
 
+    $('.unslick').slick('unslick')
+
     // tab
     $('.tab-list li').on('click', function () {
        let index = $(this).index()
         $(this).addClass('active').siblings('li').removeClass('active')
-        $(this).closest('.tabs-wrapper').find('.tab-content').removeClass('active')
-        $(this).closest('.tabs-wrapper').find('.tab-content').eq(index).addClass('active')
+        $(this).closest('.tabs-wrapper').children('.tab-content').removeClass('active')
+        $(this).closest('.tabs-wrapper').children('.tab-content').eq(index).addClass('active')
     })
 
     // input file

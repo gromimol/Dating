@@ -120,6 +120,9 @@ img {
     width: 160px;
   }
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 .mb-1 {
   margin-bottom: 1rem !important;
   @media (max-width: 1023px) {

@@ -1,0 +1,109 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b Messages
+                    p.font-600.mb-2 Here you can read and reply to your messages.
+                    .tabs-wrapper
+                        .top-row
+                            ul.tab-list.tab-list--grey-bg.d-flex
+                                li.active Inbox
+                                li Outbox
+                                li Sent Friend Request
+                        .tab-content.active
+                            .h4.font-700.mb-1 Inbox
+                            form(action="#")
+                                .form-line.d-flex.align-center
+                                    .input-wrapper.d-flex.align-center.mb-0
+                                        span Search messages:
+                                        input.input(type="search" placeholder="Search here...")
+                                    input.btn.btn--small.btn--violet(value="Search" type="submit")
+                            table.statistic-table.mt-3.mb-3
+                                thead
+                                    td SUBJECT
+                                    td From
+                                    td DATE
+                                tbody
+                                    tr
+                                        td(data-title="SUBJECT")
+                                            .td-content
+                                                .checkbox
+                                                    input(type="checkbox" id="ch1" checked)
+                                                    label(for="ch1")
+                                                        span.icon-check.checkbox__icon
+                                                        span.checkbox__text Hello Amigo! <br>How much is the fish? <span class="grey text--small">(replied)</span>
+                                        td(data-title="From")
+                                            .td-content
+                                                .name.d-flex.align-center
+                                                    span.avatar.mr-1
+                                                        img(src="img/photos/photo-3.jpg")
+                                                    span.name__content.d-flex Deltatron 89 <sup class="status online"></sup>
+                                        td(data-title="DATE")
+                                            .td-content 17:08 13-Dec-2020
+                                    tr
+                                        td(data-title="SUBJECT")
+                                            .td-content
+                                                .checkbox
+                                                    input(type="checkbox" id="ch2")
+                                                    label(for="ch2")
+                                                        span.icon-check.checkbox__icon
+                                                        span.checkbox__text Hi Dude
+                                        td(data-title="From")
+                                            .td-content
+                                                .name.d-flex.align-center
+                                                    span.avatar.mr-1
+                                                        img(src="img/photos/photo-3.jpg")
+                                                    span.name__content.d-flex Silvercoco
+                                        td(data-title="DATE")
+                                            .td-content 17:08 13-Dec-2020
+                            a.btn.btn--violet.btn--extra-lg(href="#") Delete Selected
+                        .tab-content
+                            table.statistic-table.mt-3.mb-3
+                                thead
+                                    td SUBJECT
+                                    td From
+                                    td DATE
+                                tbody
+                                    tr
+                                        td(data-title="SUBJECT")
+                                            .td-content
+                                                .checkbox
+                                                    input(type="checkbox" id="ch3")
+                                                    label(for="ch3")
+                                                        span.icon-check.checkbox__icon
+                                                        span.checkbox__text Hi Dude
+                                        td(data-title="From")
+                                            .td-content
+                                                .name.d-flex.align-center
+                                                    span.avatar.mr-1
+                                                        img(src="img/photos/photo-3.jpg")
+                                                    span.name__content.d-flex Silvercoco
+                                        td(data-title="DATE")
+                                            .td-content 17:08 13-Dec-2020
+                            a.btn.btn--violet.btn--extra-lg(href="#") Delete Selected
+
+                        .tab-content
+                            table.statistic-table.mt-3.mb-3
+                                thead
+                                    td Sent to
+                                    td Status
+                                    td DATE
+                                tbody
+                                    tr
+                                        td(data-title="Sent to")
+                                            .td-content
+                                                .name.d-flex.align-center
+                                                    span.avatar.mr-1
+                                                        img(src="img/photos/photo-3.jpg")
+                                                    span.name__content.d-flex.align-center <span class="icon-star_full yellow"></span> Silvercoco
+                                        td(data-title="Status")
+                                            .td-content
+                                                p.text--small.mb-1 Currently awaiting approval from <a href="#" class="pink link">ladyboy</a>
+                                                a.btn.btn--violet.btn--small(href="#") Cancel Request
+                                        td(data-title="DATE")
+                                            .td-content 17:08 13-Dec-2020
+        include ../includes/rightSidebar.pug
