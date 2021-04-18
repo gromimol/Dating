@@ -109,4 +109,10 @@ $(document).ready(function () {
         $(this).parent().remove();
     })
 
+    // accordeon
+    $('.js--accordeon-title').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).next('.js--accordeon-content').slideToggle();
+    })
+
 });

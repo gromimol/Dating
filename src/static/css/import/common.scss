@@ -48,6 +48,9 @@ img {
 .align-center{
   align-items: center;
 }
+.align-end{
+  align-items: flex-end;
+}
 .justify-center{
   justify-content: center;
 }
@@ -208,11 +211,25 @@ img {
   }
 }
 .w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 .link {
   &:hover {
     text-decoration: underline;
   }
 }
-
+.text-block {
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    margin-bottom: .5em;
+  }
+  p {
+    line-height: 1.5;
+    a {
+      color: $pink;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -122,6 +122,12 @@
       opacity: 0;
     }
   }
+  &--empty {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
   img {
     width: 100%;
   }

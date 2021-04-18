@@ -6,6 +6,15 @@ h1, .h1{
   @media (max-width: 990px) {
     font-size: 30px;
   }
+  &--lg {
+    font-size: 5rem;
+    @media (max-width: 1023px) {
+      font-size: 4.2rem;
+    }
+    @media (max-width: 990px) {
+      font-size: 30px;
+    }
+  }
 }
 h2, .h2{
   font-size: 3.2rem;
