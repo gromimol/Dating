@@ -78,7 +78,7 @@
 .tab-list {
   font-size: 14px;
   font-weight: 700;
-  @media (max-width: 1024px) {
+  @media (max-width: 1250px) {
     margin: 20px 0 10px;
     overflow-x: auto;
   }
@@ -88,7 +88,7 @@
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: all .3s;
-    @media (max-width: 1024px) {
+    @media (max-width: 1250px) {
       white-space: nowrap;
     }
     @media (max-width: 767px) {
@@ -114,7 +114,10 @@
     background-color: $grey-light;
     border-radius: 10px 10px 0 0 ;
     li {
-      padding: 2rem;
+      padding: 2rem 1.5rem;
+      @media (max-width: 1250px) {
+        padding: 2rem 1rem;
+      }
       @media (max-width: 767px) {
         padding: 10px 5px;
       }
@@ -156,6 +159,10 @@
   &--red {
     background-color: $pink;
   }
+  &--grey {
+    background-color: $grey-bg;
+    color: #000;
+  }
 }
 .video-block__top {
   @media (max-width: 767px) {
@@ -176,4 +183,91 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding-right: 10px;
+}
+.bars-item__top,
+.bars-item__content{
+  padding: 2rem;
+  @media(max-width: 767px) {
+    padding: 15px 10px;
+  }
+}
+.bars-item__content {
+  p{
+    margin-bottom: 1.5rem;
+  }
+}
+.model-video {
+  .video-block {
+    width: 100%;
+    img, iframe, video {
+      width: 100%;
+    }
+  }
+}
+.model-video__options {
+  padding: 2rem;
+  @media(max-width: 767px) {
+    padding: 15px;
+  }
+  &__top {
+    @media(max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+  p {
+    line-height: 1.4;
+    span {
+      @media(max-width: 480px) {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+    }
+    .grey {
+      @media(max-width: 480px) {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+.model-video__options__top__left {
+  flex-grow: 1;
+}
+.model-video__options__top__right {
+  min-width: 200px;
+  text-align: right;
+  @media(max-width: 767px) {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+.profile-form {
+  @media(max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+.profile-form__form {
+  flex-grow: 1;
+  padding-right: 20px;
+  @media(max-width: 767px) {
+    padding-right: 0;
+  }
+}
+.profile-form__photo {
+  width: 240px;
+  flex: none;
+  @media(max-width: 1200px) {
+    width: 200px;
+  }
+  @media(max-width: 767px) {
+    width: 240px;
+    margin: 0 auto 30px;
+  }
+  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 }

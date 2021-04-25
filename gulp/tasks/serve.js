@@ -3,7 +3,7 @@ module.exports = function () {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "escort-newtrans-webcam.html"
+                index: "non-escort-member.html"
             }
         });
     });

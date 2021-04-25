@@ -114,3 +114,23 @@
     }
   }
 }
+.links-table {
+ table-layout: unset;
+  td:first-child,
+  td:last-child {
+    width: 100px;
+    @media(max-width: 480px) {
+      width: 100%;
+    }
+  }
+  td:nth-child(2) {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 460px;
+      @media(max-width: 480px) {
+        max-width: 200px;
+      }
+    }
+  }
+}

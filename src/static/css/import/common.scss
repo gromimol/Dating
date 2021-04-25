@@ -210,6 +210,21 @@ img {
     margin-right: 20px !important;
   }
 }
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pb-1 {
+  padding-bottom: 1rem !important;
+  @media (max-width: 1023px) {
+    padding-bottom: 10px !important;
+  }
+}
+.pb-2 {
+  padding-bottom: 2rem !important;
+  @media (max-width: 1023px) {
+    padding-bottom: 20px !important;
+  }
+}
 .w-100 {
   width: 100% !important;
 }
@@ -232,4 +247,19 @@ img {
       }
     }
   }
+  img {
+    margin-bottom: 1rem;
+  }
+}
+.no-border{
+  border: none !important;
+}
+.border-radius-10 {
+  border-radius: 10px;
+}
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+.border-radius-0 {
+  border-radius: 0 !important;
 }
