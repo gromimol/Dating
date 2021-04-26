@@ -129,6 +129,11 @@
   @media(max-width: 1023px) {
     font-size: 12px;
   }
+  @media(max-width: 480px) {
+    p {
+      font-size: 12px;
+    }
+  }
 }
 .models-card__img {
   display: block;
@@ -225,5 +230,19 @@
         width: 100%;
       }
     }
+  }
+}
+.models-card__data__top__icons {
+  padding-left: 20px;
+  span:not(:last-child){
+    margin-right: 10px;
+  }
+}
+.models-card__data__top {
+  @media (max-width: 767px) {
+    margin-bottom: 10px !important;
+  }
+  .name {
+    margin-bottom: 0 !important;
   }
 }

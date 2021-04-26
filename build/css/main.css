@@ -1268,6 +1268,39 @@ p.text--small {
   font-size: 12px;
 }
 
+.input-wrapper-row.two-columns {
+  max-width: 500px;
+}
+
+.input-wrapper-row.two-columns .input-wrapper {
+  width: 59%;
+}
+
+@media (max-width: 480px) {
+  .input-wrapper-row.two-columns .input-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) {
+  .input-wrapper-row.two-columns .input-wrapper .input,
+  .input-wrapper-row.two-columns .input-wrapper .select-input {
+    max-width: 160px;
+  }
+}
+
+.input-wrapper-row.two-columns .checkbox {
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 480px) {
+  .input-wrapper-row.two-columns .checkbox {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
 .input-wrapper-row.three-columns {
   max-width: 500px;
 }
@@ -1299,6 +1332,40 @@ p.text--small {
     width: 50%;
     margin-bottom: 10px;
   }
+}
+
+.input-wrapper-row.seven-columns {
+  max-width: 500px;
+}
+
+.input-wrapper-row.seven-columns .checkbox {
+  width: calc(100% / 7);
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1200px) {
+  .input-wrapper-row.seven-columns .checkbox {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-wrapper-row.seven-columns .checkbox {
+    width: 33.333%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-wrapper-row.seven-columns .checkbox {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+.input-wrapper-row.w-100 {
+  max-width: unset;
 }
 
 .input-wrapper--lt .input-wrapper {
@@ -2657,7 +2724,7 @@ textarea.input {
   margin-bottom: 2rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1360px) {
   .top-row {
     display: block;
   }
@@ -3701,6 +3768,12 @@ textarea.input {
   }
 }
 
+@media (max-width: 480px) {
+  .models-card__data__item p {
+    font-size: 12px;
+  }
+}
+
 .models-card__img {
   display: block;
   position: relative;
@@ -3840,6 +3913,24 @@ textarea.input {
   .models-card-list.two-column .models-card {
     width: 100%;
   }
+}
+
+.models-card__data__top__icons {
+  padding-left: 20px;
+}
+
+.models-card__data__top__icons span:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .models-card__data__top {
+    margin-bottom: 10px !important;
+  }
+}
+
+.models-card__data__top .name {
+  margin-bottom: 0 !important;
 }
 
 .left-content {
@@ -5029,6 +5120,16 @@ p a.black:hover {
   .countries-list__content__list li a {
     font-size: 12px;
     padding: 7px 12px;
+  }
+}
+
+.countries-list__content__list--three-column li {
+  width: 33.3333%;
+}
+
+@media (max-width: 640px) {
+  .countries-list__content__list--three-column li {
+    width: 49%;
   }
 }
 
