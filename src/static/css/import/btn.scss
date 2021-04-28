@@ -108,4 +108,15 @@
       padding: 1em 1.5em;
     }
   }
+  &--reset {
+    border: none;
+    appearance: none;
+    background: transparent;
+    color: $pink;
+    font-size: 14px;
+    font-weight: 600;
+    &:hover {
+      color: #000
+    }
+  }
 }

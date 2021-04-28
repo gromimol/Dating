@@ -1254,6 +1254,21 @@ p.text--small {
   }
 }
 
+.btn--reset {
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  color: #ef019e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn--reset:hover {
+  color: #000;
+}
+
 .input-wrapper-row > span {
   display: block;
   font-size: 14px;
@@ -3594,6 +3609,30 @@ textarea.input {
 
 @media (max-width: 480px) {
   .moddels-list .models-card {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+.moddels-list--five-column .models-card {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1220px) {
+  .moddels-list--five-column .models-card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  .moddels-list--five-column .models-card {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 480px) {
+  .moddels-list--five-column .models-card {
     width: 50%;
     margin-bottom: 10px;
   }
