@@ -3104,6 +3104,61 @@ p img {
   height: auto;
 }
 
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-title {
+  font-size: 16px;
+  font-weight: 600;
+  background: #f4f2f6;
+  line-height: 1.2;
+  padding: 18px 20px 14px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  .faq-title {
+    padding: 14px 10px 12px;
+    font-size: 15px;
+  }
+}
+
+.faq-content {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.faq-content a {
+  color: #ef019e;
+}
+
+.faq-content a:hover {
+  text-decoration: underline;
+}
+
+.banner-type {
+  margin-bottom: 30px;
+}
+
+.banner-type__header {
+  background: #f4f2f6;
+  border-radius: 10px 10px 0 0;
+  padding: 15px 20px;
+}
+
+@media (max-width: 480px) {
+  .banner-type__header {
+    padding: 15px 10px;
+  }
+}
+
+.banner-type__preview {
+  line-height: 0;
+}
+
 .models-slider,
 .news-slider {
   margin: 0 -10px;
