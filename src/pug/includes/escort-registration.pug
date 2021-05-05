@@ -1,0 +1,80 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                .profile-content__body.w-100
+                    .h2.mb-2
+                        b Escort Registration
+                    p.font-600.mb-2.text-uppercase ATTENTION!
+                    p.font-500.mb-0 <span class="violet">1.</span> Register only if you are professional  <span class="pink">SHEMALE ESCORT.</span>
+                    p.font-500.mb-0 <span class="violet">2.</span> Only 1 profile is allowed to have per person. Do not create more than one account or you will be blocked.
+                    p.font-500.mb-0 <span class="violet">3.</span> Enter as much information as possible and only valid information.
+                    p.font-500.mb-0 <span class="violet">4.</span> After entering your information, sign in and UPLOAD YOUR PHOTOS. At least one photo of face is required!
+                    p.font-500.mb-0 <span class="violet">5.</span> Your phone number is required and it must be valid.
+                    p.font-500.mb-0 <span class="violet">6.</span> Do not enter false information or photos that you don't have copyright.
+                    p.font-500.mb-2 <span class="violet">7.</span> Do not post your prices or rates
+                    p.font-500.text-uppercase.pink IF YOU DO NOT FOLLOW THOSE SIMPLE RULES, YOUR PROFILE MIGHT BE DELETED AND YOU WILL BE BANNED FROM THIS SITE
+                    .h4.font-600.mb-2 Transsexual Escort Sign Up
+                    form(action="#")
+                        .input-wrapper
+                            span Username:
+                            input.input(type="text")
+                        .input-wrapper
+                            span Password:
+                            input.input(type="password")
+                        .input-wrapper
+                            span Confirm password:
+                            input.input(type="password")
+                        .input-wrapper
+                            span E-mail:
+                            span.grey.text--small If possible, do not use Yahoo e-mail address
+                            input.input(type="email")
+                        .input-wrapper
+                            span Name:
+                            span.grey.text--small Not required
+                            input.input(type="text")
+                        .input-wrapper.input-wrapper--extra-small
+                            span Age:
+                            select.select-input
+                                option 18
+                                option 20
+                                option 22
+                        .input-wrapper
+                            span Gender:
+                            select.select-input
+                                option Transsexual (Pre-op)
+                                option Transsexual (Pre-op)
+                                option Transsexual (Pre-op)
+                        .input-wrapper
+                            span Country:
+                            select.select-input
+                                option Select...
+                                option USA
+                                option France
+                        .input-wrapper
+                            span City:
+                            span.grey.text--small Optional
+                            input.input(type="text")
+                        .input-wrapper
+                            span Phone:
+                            input.input(type="text")
+                        .input-wrapper
+                            span Website:
+                            span.grey.text--small Optional
+                            input.input(type="text")
+                        .input-wrapper
+                            span About me:
+                            span.text--small.violet-light Please do not include your rates / fees!
+                            textarea.input
+                        .input-wrapper.mb-3
+                            span.mb-2 Terms & Conditions:
+                            .checkbox
+                                input(type="checkbox" id="check7" checked)
+                                label(for="check7")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text.font-500 I AGREE & I HAVE READ <a href="#" class="link pink">Terms & Conditions</a><br /> <span class="grey text--small">You must agree the Terms & Conditions if you wish to Sign Up.</span>
+                        .btn-container.d-flex.align-center
+                            input(type="submit" value="Sign Up").btn.btn--lg.btn--red-gradient
+                            p.notice-text.grey.font-600.ml-2 Registration is Totally FREE!
+        include ../includes/rightSidebar.pug

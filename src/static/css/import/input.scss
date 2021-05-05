@@ -201,6 +201,9 @@ textarea.input {
         background-color: $pink;
         border-color: $pink;
         box-shadow: 0 2px 10px rgba(#000, .2);
+        &::before {
+          display: block
+        }
       }
     }
   }
@@ -224,6 +227,9 @@ textarea.input {
   font-size: 8px !important;
   margin-right: 8px;
   color: #fff;
+  &::before {
+    display: none;
+  }
 }
 .form-line {
   margin-bottom: 2rem;

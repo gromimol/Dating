@@ -1,0 +1,26 @@
+.modal#login-modal
+    .modal-content.text-center
+        .logo: img(src='img/icons/logo.svg')
+        .h2.font-600.text-center.white.mb-4.text-uppercase Login Form
+        form(action="#")
+            .input-wrapper
+                input.input(type="text" placeholder="Username")
+            .input-wrapper
+                input.input(type="password" placeholder="Password")
+            .additional-inputs-row.d-flex.align-center.justify-between.mb-4.mt-4
+                .checkbox
+                    input(type="checkbox" id="agree" checked)
+                    label(for="agree")
+                        span.icon-check.checkbox__icon
+                        span.checkbox__text.white Remember me
+                a.link.pink.font-500(href="#") Forgot password?
+            input(type="submit" value="Login").btn.btn--red-gradient.btn--full-width.btn--lg.mb-3
+            p.text-center.mb-2
+                a(href="#").pink.link.font-500 Activate Account
+            p.text-center.white.mb-4.
+                If you have problems with Secure Login,<br>
+                then try: <a href="#" class="pink link">Non-Secure Login</a>
+            p.text-center
+                span.white Don't have an account?<br />
+                a.btn.btn--lg.btn--violet.mt-2(href="#") Sign Up!
+#overlay

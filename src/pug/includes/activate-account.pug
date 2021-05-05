@@ -1,0 +1,15 @@
+.modal#activate-modal
+    .modal-content.text-center
+        .logo: img(src='img/icons/logo.svg')
+        .h2.font-600.text-center.white.mb-4.text-uppercase ACTIVATE ACCOUNT
+        p.text-center.white.mb-4
+            Before you can access TS-Dating.com, you need to <b>Activate Your Account!</b><br>
+            You can find your username and activation code inside the E-MAIL we sent to you.<br>
+            If you can not find this e-mail, check your <b>JUNK e-mail folder</b>.
+        form(action="#")
+            .input-wrapper
+                input.input(type="text" placeholder="Username")
+            .input-wrapper
+                input.input(type="text" placeholder="Activation Code")
+            input(type="submit" value="Activate").btn.btn--red-gradient.btn--full-width.btn--lg.mt-2
+#overlay

@@ -3,7 +3,7 @@ module.exports = function () {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "member-local-new.html"
+                index: "link-to-us.html"
             }
         });
     });

@@ -1,0 +1,88 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                .profile-content__body.w-100
+                    .h2.mb-2
+                        b Member Registration
+                    p.font-600.mb-2.text-uppercase ATTENTION!
+                    p.font-500.mb-0 <span class="violet">1.</span> <span class="pink">Only 1 profile per person - Do not create more than one account or you will be banned.</span>
+                    p.font-500.mb-0 <span class="violet">2.</span> Upload only YOUR photos and videos and without any watermarks.
+                    p.font-500.mb-2 <span class="violet">3.</span> Do not enter false information or photos that you don't own a copyright.
+                    p.font-500.text-uppercase.pink IF YOU DO NOT FOLLOW THESE SIMPLE RULES, YOUR PROFILE CAN BE DELETED AND YOU WILL BE BANNED FROM THIS WEBSITE
+                    .h4.font-600.mb-2 Member Sign Up
+                    form(action="#")
+                        .input-wrapper
+                            span Username:
+                            input.input(type="text")
+                        .input-wrapper
+                            span Password:
+                            input.input(type="password")
+                        .input-wrapper
+                            span Confirm password:
+                            input.input(type="password")
+                        .input-wrapper
+                            span E-mail:
+                            span.grey.text--small If possible, do not use Yahoo e-mail address
+                            input.input(type="email")
+                        .input-wrapper
+                            span Name:
+                            span.grey.text--small Not required
+                            input.input(type="text")
+                        .input-wrapper.input-wrapper--extra-small
+                            span Age:
+                            select.select-input
+                                option 18
+                                option 20
+                                option 22
+                        .input-wrapper
+                            span Country:
+                            select.select-input
+                                option Select...
+                                option USA
+                                option France
+                        .input-wrapper
+                            span I am:
+                            select.select-input
+                                option Transsexual (Pre-op)
+                                option Men
+                                option Women
+                        .input-wrapper
+                            span.mb-2 I want to find:
+                            .checkbox.mb-1
+                                input(type="checkbox" id="check2" checked)
+                                label(for="check2")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text Pre-op TS <span class="pink">(transsexual)</span>
+                            .checkbox.mb-1
+                                input(type="checkbox" id="check3")
+                                label(for="check3")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text Post-op TS <span class="pink">(transsexual)</span>
+                            .checkbox.mb-1
+                                input(type="checkbox" id="check4")
+                                label(for="check4")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text Male
+                            .checkbox.mb-1
+                                input(type="checkbox" id="check5")
+                                label(for="check5")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text Female
+                            .checkbox
+                                input(type="checkbox" id="check6")
+                                label(for="check6")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text TV <span class="pink">(Transvestite / Crossdresser)</span>
+                        .input-wrapper.mb-3
+                            span.mb-2 Terms & Conditions:
+                            .checkbox
+                                input(type="checkbox" id="check7" checked)
+                                label(for="check7")
+                                    span.icon-check.checkbox__icon
+                                    span.checkbox__text.font-500 I AGREE & I HAVE READ <a href="#" class="link pink">Terms & Conditions</a><br /> <span class="grey text--small">You must agree the Terms & Conditions if you wish to Sign Up.</span>
+                        .btn-container.d-flex.align-center
+                            input(type="submit" value="Sign Up").btn.btn--lg.btn--red-gradient
+                            p.notice-text.grey.font-600.ml-2 Registration is Totally FREE!
+        include ../includes/rightSidebar.pug

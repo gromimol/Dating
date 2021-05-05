@@ -1,0 +1,30 @@
+.modal#signup-modal
+    .modal-content.text-center
+        .logo: img(src='img/icons/logo.svg')
+        .h2.font-600.text-center.white.mb-4.text-uppercase Sign Up Form
+        p.text-center.grey.font-700.mb-3 Your Are?
+        form(action="#").form--lg
+            .steps
+                .step
+                    .step-row.d-flex.align-center.justify-center
+                        .step-item
+                            .step-item__content
+                                input(type="radio" name="step-1" id="step-1" checked)
+                                label(for="step-1")
+                                    span.step-checkbox
+                                    span.step-title Regular Member
+                                    span.step-option-title.font-700 I am +18 years old
+                                    span.step-option-subtitle Transsexual / TV / Male / Female
+                            a.pink.link.text--small(href="#") What is a pre-op ts or post-op ts?
+                        span.grey.text-uppercase or
+                        .step-item
+                            .step-item__content
+                                input(type="radio" name="step-1" id="step-2")
+                                label(for="step-2")
+                                    span.step-checkbox
+                                    span.step-title Shemale Escort
+                                    span.step-option-title.font-700 I am transsexual escort
+                                    span.step-option-subtitle +18 years old
+                            a.pink.link.text--small(href="#") What is a shemale?
+                    button(type="button").btn.btn--lg.btn--red-gradient Next Step <span class="icon-arrow_right ml-2"></span>
+#overlay

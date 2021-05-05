@@ -115,4 +115,10 @@ $(document).ready(function () {
         $(this).next('.js--accordeon-content').slideToggle();
     })
 
+    // warn modal
+    $('.close-modal').on('click', function(e) {
+        e.preventDefault();
+        $('.warn-block, #dark-overlay').hide()
+    })
+
 });
