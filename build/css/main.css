@@ -3176,6 +3176,22 @@ p img {
   padding-bottom: 20px;
 }
 
+.models-slider--forum .news-slider__item__body,
+.news-slider--forum .news-slider__item__body {
+  border-radius: 10px;
+}
+
+.models-slider--forum .news-slider__item__content:hover,
+.news-slider--forum .news-slider__item__content:hover {
+  -webkit-box-shadow: -1px 15px 29px -15px rgba(0, 0, 0, 0.28);
+          box-shadow: -1px 15px 29px -15px rgba(0, 0, 0, 0.28);
+}
+
+.models-slider--forum .news-slider__item__content:hover .news__date .black,
+.news-slider--forum .news-slider__item__content:hover .news__date .black {
+  color: #9827ff;
+}
+
 .news-slider__item,
 .models-slider__item {
   padding: 0 10px;

@@ -7,6 +7,19 @@
   .slick-list {
     padding-bottom: 20px;
   }
+  &--forum {
+    .news-slider__item__body{
+      border-radius: 10px;
+    }
+    .news-slider__item__content:hover {
+      box-shadow: -1px 15px 29px -15px rgba(0, 0, 0, .28);
+      .news__date{
+        .black {
+          color: $violet-light
+        }
+      }
+    }
+  }
 }
 .news-slider__item,
 .models-slider__item {
