@@ -47,9 +47,8 @@ $(document).ready(function () {
         $('.search-btn span').removeClass('icon-close').addClass('icon-search')
     })
 
-    $('.menu a').on('click', function (e){
-        e.preventDefault();
-        $(this).parent().toggleClass('open-submenu')
+    $('.menu a [class^="icon-"]').on('click', function (){
+        $(this).parent().parent().toggleClass('open-submenu')
     })
 
     // user-authorized menu
