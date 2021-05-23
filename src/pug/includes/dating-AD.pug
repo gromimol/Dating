@@ -1,0 +1,142 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .h3
+                        b Dating AD
+                    p.font-500.mb-3.
+                        Here you can preview and change or delete your Dating ad.<br>
+                        Your Dating Ad will be posted on page: <a href="#" class="pink link">www.ts-dating.com/personals</a>
+                    .h4.text-uppercase.font-700.mb-3 DATING AD RULES
+                    ol.list
+                        li 1. Your Dating Ad text must be only oriented to find a date, to find a friend or casual encounters.
+                        li 2. You are not allowed to use your Ad here to make money or to gain profit by any way.
+                        li 3. Escort ad's or pay-dates are not allowed here
+                    p.font-700.text-italic If you do not follow rules, your account can be <a href="#" class="link violet-light">BLOCKED</a>
+
+                    .tabs-wrapper
+                        .top-row
+                            ul.tab-list.tab-list--grey-bg.d-flex
+                                li.active Change Dating AD
+                                li Preview
+                        .tab-content.active
+                            form(action="#")
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li.d-flex.align-center
+                                        span.grey Personal Ad status:
+                                        span.black.d-flex.align-center
+                                            span.badge.badge--green active
+                                            a.btn.btn--violet.btn--small.ml-1(href="#") Deactivate
+                                    li
+                                        span.grey I am:
+                                        span.black 18 years old Male
+                                    li
+                                        span.grey From:
+                                        span.black Russia
+                                    li
+                                        span.grey Sexual orientation:
+                                        span.black
+                                            select.select-input
+                                                option Not Entered
+                                                option Trans
+                                                option Tran(Pre-Op)
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey I'm Looking for:
+                                        span.black
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id1" checked)
+                                                label(for="id1")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Pre-op TS
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id2")
+                                                label(for="id2")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Post-op TS
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id3")
+                                                label(for="id3")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Male
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id4")
+                                                label(for="id4")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Female
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id5")
+                                                label(for="id5")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text TV (Transvestite)
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey For:
+                                        span.black
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id6" checked)
+                                                label(for="id6")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Sex
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id7")
+                                                label(for="id7")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Love / Long term relationship
+                                            .checkbox.mb-1
+                                                input(type="checkbox" id ="id8")
+                                                label(for="id8")
+                                                    span.icon-check.checkbox__icon
+                                                    span.checkbox__text Friendship / Penpal
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li.d-flex.align-center
+                                        span.grey Dating Ad title:
+                                        span.black.flex-grow
+                                            .input-wrapper.w-100.mb-0
+                                                input.input(type="text")
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li.d-flex
+                                        span.grey Message:
+                                        span.black.flex-grow
+                                            .input-wrapper.w-100.mb-0
+                                                textarea.input
+                                .descr-list.font-600.mt-1.border-bottom.mb-2.pb-2.no-border
+                                    li
+                                        span.grey
+                                        span.black
+                                            p.text--small.grey.mb-1 (Personal add will be activated after saving)
+                                            input(type="submit" value="Update/Save").btn.btn--violet.btn--lg
+                        .tab-content
+                            form(action="#")
+                                ul.descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey Age:
+                                        span.black 26 years old
+                                    li
+                                        span.grey Gender:
+                                        span.black Transsexual (Pre-op)
+                                    li
+                                        span.grey Sexual orientation:
+                                        span.pink.text-uppercase Active & Passive
+                                    li
+                                        span.grey Country:
+                                        span.black Philippines (quezon city)
+                                ul.descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey I'm Looking for:
+                                        span.black -Male
+                                ul.descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey For:
+                                        span.black - SEX <br> - Love / Long term relationship<br> - Friendship / Penpal
+                                ul.descr-list.font-600.mt-1.border-bottom.mb-2.pb-2
+                                    li
+                                        span.grey Link:
+                                        span.black
+                                            a.link.pink(href="#") www.ts-dating.com/personal/279941
+                                .pb-2.mb-2
+                                    p.font-600.grey Personal Ad submitted: <span class="black">11:27 13-Feb-2019</span>  |  Updated: <span class="black">04:07 21-Mar-2019</span>
+        include ../includes/rightSidebar.pug
