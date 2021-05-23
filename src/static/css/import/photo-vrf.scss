@@ -1,0 +1,55 @@
+.photo-vrf-top__status {
+  flex: none;
+  width: 190px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  @media(max-width: 1023px) {
+    font-size: 16px;
+  }
+  @media(max-width: 640px) {
+    width: 100%;
+    padding: 15px 10px;
+    order: -1;
+    margin-bottom: 15px;
+    br {
+      display: none;
+    }
+  }
+  &--failed {
+    background-color: $pink;
+    color: #fff;
+  }
+  &--wait {
+    background-color: $yellow;
+    color: #fff;
+  }
+  &--success {
+    background-color: $green;
+    color: #fff;
+  }
+  [class^='icon-'] {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    @media(max-width: 1023px) {
+      font-size: 24px;
+    }
+  }
+}
+.photo-vrf-top {
+  @media(max-width: 640px) {
+    flex-wrap: wrap;
+  }
+  &__descr {
+    flex-grow: 1;
+    padding-right: 2rem;
+  }
+}
+.vrf-info {
+  padding: 3rem 3rem 0;
+}

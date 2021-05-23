@@ -1,0 +1,108 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                include ../includes/profile-left-sidebar
+                .profile-content__body
+                    .photo-vrf-top.d-flex.justify-between.mb-3
+                        .photo-vrf-top__descr
+                            .h3.font-600.mb-3 Photo Verification
+                            p.text-uppercase.font-600.mb-2 PHOTO VERIFICATION INSTRUCTIONS
+                            ul.list
+                                li.
+                                    1. Take large paper and write there your username 'testescort' and website address 'www.TS-Dating.com'
+                                li.
+                                    2. Take a Photo of yourself holding this paper.
+                                li.
+                                    3. Upload the photo and wait to get verified.
+                            p.pink.font-600
+                                This photo will not be visible for other site members or guests
+                        .photo-vrf-top__status.photo-vrf-top__status--failed.text-center
+                            span.icon-warning
+                            .photo-vrf-top__status__text.
+                                Photo<br> Verification<br> FAILED!
+                    .photo-vrf-top.d-flex.justify-between.mb-3
+                        .photo-vrf-top__descr
+                            .h3.font-600.mb-3 Photo Verification
+                            p.text-uppercase.font-600.mb-2 PHOTO VERIFICATION INSTRUCTIONS
+                            ul.list
+                                li.
+                                    1. Take large paper and write there your username 'testescort' and website address 'www.TS-Dating.com'
+                                li.
+                                    2. Take a Photo of yourself holding this paper.
+                                li.
+                                    3. Upload the photo and wait to get verified.
+                            p.pink.font-600
+                                This photo will not be visible for other site members or guests
+                        .photo-vrf-top__status.photo-vrf-top__status--wait.text-center
+                            span.icon-time
+                            .photo-vrf-top__status__text.
+                                Waiting for <br>Verification ...
+                    .photo-vrf-top.d-flex.justify-between.mb-3
+                        .photo-vrf-top__descr
+                            .h3.font-600.mb-3 Photo Verification
+                            p.text-uppercase.font-600.mb-2 PHOTO VERIFICATION INSTRUCTIONS
+                            ul.list
+                                li.
+                                    1. Take large paper and write there your username 'testescort' and website address 'www.TS-Dating.com'
+                                li.
+                                    2. Take a Photo of yourself holding this paper.
+                                li.
+                                    3. Upload the photo and wait to get verified.
+                            p.pink.font-600
+                                This photo will not be visible for other site members or guests
+                        .photo-vrf-top__status.photo-vrf-top__status--success.text-center
+                            span.icon-success
+                            .photo-vrf-top__status__text.
+                                You are <br>a VERIFIED<br> MEMBER!
+                    .border-radius-10.vrf-info.grey-light-bg.mb-3
+                        ul.list.mb-3
+                            li.
+                                1. Take <b>large PAPER</b> and write there your username: <b>'testescort'</b> and website address <b>'www.TS-Dating.com'</b>
+                            li.
+                                2. Take a <b>Photo</b> of yourself holding this <b>paper</b>.
+                            li.
+                                3. <b>Upload the photo</b> and wait to get verified.
+                        .h3.text-center.text-italic.font-600.mb-2 How To Get Verified
+                        p.text-center.text-italic.mb-2.
+                            Please make a snapshot of yourself with sheet of paper using a webcam, smartphone digicam and upload the photo to your account.
+                        .vrf-info-img
+                            img(src="img/photos/vrf-info.jpg" alt="").w-100
+                    .h4.text-uppercase.font-600.mb-2 Upload a Photo
+                    ul.list.mb-2
+                        li - <b>JPG, GIF</b> or <b>PGN</b> photo format is allowed
+                        li - Photo width or height must be over <b>300 pixels</b>
+                    form(action="#").mb-3
+                        .input-wrapper
+                            span Choose a Photo :
+                            span.grey.font-400 (JPG, GIF, PNG)
+                            .file.mb-3
+                                input(type="file" id="file")
+                                label(for="file").mb-1
+                                    span.file-name File it's not choose...
+                                    span.file-btn Choose File
+                                p.pink.text--small.font-600.text-italic Please read verification instructions before uploading a photo!
+                        input(type="submit" value="Upload").btn.btn--red-gradient.btn--lg
+                    .models-slider.unslick.d-flex.flex-wrap.models-slider--five-column.mb-4
+                        .models-slider__item.models-slider__item--no-overlay
+                            .models-slider__item__content
+                                img(src='img/photos/photo-1.jpg' alt="")
+                                .models-slider__item__body
+                                    .top-label.d-flex
+                                        span.icon-warning.pink
+                            a.btn.btn--violet.btn--full-width.btn--small.mt-1(href="#") Delete Photo
+                        .models-slider__item.models-slider__item--no-overlay
+                            .models-slider__item__content
+                                img(src='img/photos/photo-1.jpg' alt="")
+                                .models-slider__item__body
+                                    .top-label.d-flex
+                                        span.icon-time.yellow
+                            a.btn.btn--violet.btn--full-width.btn--small.mt-1(href="#") Delete Photo
+                        .models-slider__item.models-slider__item--no-overlay
+                            .models-slider__item__content
+                                img(src='img/photos/photo-1.jpg' alt="")
+                                .models-slider__item__body
+                                    .top-label.d-flex
+                                        span.icon-check_in_circle.green
+        include ../includes/rightSidebar.pug

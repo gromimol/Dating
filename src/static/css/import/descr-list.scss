@@ -23,4 +23,25 @@
       }
     }
   }
+  .avatar {
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  .status {
+    flex: none;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 4px;
+    &.online {
+      background-color: $green;
+    }
+    &.offline {
+      background-color: $grey;
+    }
+  }
 }

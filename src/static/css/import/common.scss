@@ -216,6 +216,9 @@ img {
 .pl-0 {
   padding-left: 0 !important;
 }
+.pl-1 {
+  padding-left: 1rem;
+}
 .pb-1 {
   padding-bottom: 1rem !important;
   @media (max-width: 1023px) {
@@ -265,4 +268,20 @@ img {
 }
 .border-radius-0 {
   border-radius: 0 !important;
+}
+.btns-row {
+  .btn {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.reply-form {
+  .btns-row {
+    .btn {
+      @media(max-width: 480px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

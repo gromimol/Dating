@@ -31,6 +31,17 @@
   @media (max-width: 480px) {
     width: 170px;
   }
+  &--no-overlay {
+    .models-slider__item__content{
+      &::before,
+      &::after {
+        display: none;
+      }
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
 }
 .models-circle-slider--four-items {
   .models-slider__item {
