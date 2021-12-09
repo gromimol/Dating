@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Логин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="modal" id="login-modal">
+      <div class="modal-content text-center">
+        <div class="logo"><img src="img/icons/logo.svg"></div>
+        <div class="h2 font-600 text-center white mb-4 text-uppercase">Login Form</div>
+        <form action="#">
+          <div class="input-wrapper">
+            <input class="input" type="text" placeholder="Username">
+          </div>
+          <div class="input-wrapper">
+            <input class="input" type="password" placeholder="Password">
+          </div>
+          <div class="additional-inputs-row d-flex align-center justify-between mb-4 mt-4">
+            <div class="checkbox">
+              <input type="checkbox" id="agree" checked>
+              <label for="agree"><span class="icon-check checkbox__icon"></span><span class="checkbox__text white">Remember me</span></label>
+            </div><a class="link pink font-500" href="#">Forgot password?</a>
+          </div>
+          <input class="btn btn--red-gradient btn--full-width btn--lg mb-3" type="submit" value="Login">
+          <p class="text-center mb-2"><a class="pink link font-500" href="#">Activate Account</a></p>
+          <p class="text-center white mb-4">
+            If you have problems with Secure Login,<br>
+            then try: <a href="#" class="pink link">Non-Secure Login</a>
+          </p>
+          <p class="text-center"><span class="white">Don't have an account?<br /></span><a class="btn btn--lg btn--violet mt-2" href="#">Sign Up!</a></p>
+        </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>

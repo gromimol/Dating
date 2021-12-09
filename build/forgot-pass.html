@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Forgot Pass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="modal" id="forgot-pass-modal">
+      <div class="modal-content text-center">
+        <div class="logo"><img src="img/icons/logo.svg"></div>
+        <div class="h2 font-600 text-center white mb-4 text-uppercase">FORGOT PASSWORD?</div>
+        <p class="text-center white mb-2">
+          <If>you have accidentally forgot your password or username then <br></If>
+          <enter>you e-mail address and we will send you reminder.</enter>
+        </p>
+        <p class="text-center white font-700 mb-3">NB! Don't show your password to anybody.</p>
+        <form action="#">
+          <div class="input-wrapper">
+            <input class="input" type="email" placeholder="Enter your e-mail">
+          </div>
+          <input class="btn btn--red-gradient btn--full-width btn--lg mt-1" type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
