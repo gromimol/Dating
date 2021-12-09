@@ -3,7 +3,7 @@ module.exports = function() {
         $.bs.init({
             server: {
                 baseDir: "./build",
-                index: "photo-raiting.html"
+                index: "add-raiting-to-photo.html"
             }
         });
     });

@@ -1,0 +1,128 @@
+.main-layout.main-layout--inner
+    .container.d-flex
+        .left-content
+            include ../includes/horizontal-banner
+            .profile-content.d-flex
+                .profile-content__body.w-100
+                    .h3.mb-2
+                        b Shemale Photo Rating
+                    .photo-raiting-filter.mb-2
+                        form.w-100.d-flex.align-center.justify-between.mb-2
+                            .input-wrapper.d-flex.align-center.mb-0
+                                span <b>Rate:</b>
+                                select.select-input
+                                    option All Members
+                                    option New Members
+                                    option Female
+                            .photo-raiting-filter__right.d-flex.align-center
+                                .input-wrapper.d-flex.align-center.mb-0
+                                    span <b>From age:</b>
+                                    select.select-input
+                                        option Select...
+                                        option 18
+                                        option 20
+                                        option 22
+                                        option 24
+                                .input-wrapper.d-flex.align-center.mb-0.ml-2.mr-2
+                                    span <b>To:</b>
+                                    select.select-input
+                                        option Select...
+                                        option 18
+                                        option 20
+                                        option 22
+                                        option 24
+                                input(type='submit' value='Go').btn.btn--small.btn--violet.font-600
+                        form(action="#")
+                            .add-raiting-block.d-flex
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='skip' checked)
+                                    label(for='skip')
+                                        span.add-raiting-block__item__top -
+                                        span.add-raiting-block__item__name Skip
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='1')
+                                    label(for='1')
+                                        span.add-raiting-block__item__top 1
+                                        span.add-raiting-block__item__name Don’t Like
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='2')
+                                    label(for='2')
+                                        span.add-raiting-block__item__top 2
+                                        span.add-raiting-block__item__name Don’t Care
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='3')
+                                    label(for='3')
+                                        span.add-raiting-block__item__top 3
+                                        span.add-raiting-block__item__name OK
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='4')
+                                    label(for='4')
+                                        span.add-raiting-block__item__top 4
+                                        span.add-raiting-block__item__name Pretty Good
+                                .add-raiting-block__item
+                                    input(type='radio' name='raiting' id='5')
+                                    label(for='5')
+                                        span.add-raiting-block__item__top 5
+                                        span.add-raiting-block__item__name Awesome
+                    .photo-for-raiting.mb-3
+                        .photo-for-raiting__top
+                            <div class="models-card__data">
+                                <div class="name d-flex"><span class="icon-star_full yellow"></span> Alex Razersection <sup class="status online"></sup></div>
+                                <div class="type grey">Transsexual (pre-op)</div>
+                            </div>
+
+                        .photo-for-raiting__img
+                            img(src='img/photos/news_1.jpg')
+                    <div class="photo-raiting-models-card models-card models-card--border-bottom models-card--row grey-light-bg">
+                        <a class="models-card__img" href="#"><img src="img/photos/photo-1.jpg"></a>
+                        <div class="models-card__body">
+                            <div class="models-card__data">
+                                <div class="models-card__data__item">
+                                    <p class="font-600 mb-1">Your rated:</p>
+                                    <p class="font-600 mb-1 pink">DafneStar</p>
+                                    <p class="font-600 mb-1"><span class="grey">Rating:</span><span class="black"> 4.65</span></p>
+                                    <p class="font-600 mb-1"><span class="grey">Your vote was:</span><span class="black"> 5</span></p>
+                                    <p class="font-600 mb-1"><span class="grey">Number of votes:</span><span class="black"> 23</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    .h3.mb-2.mt-5
+                        b This block For unregistered users
+                    .photo-raiting-filter.mb-2
+                        form.w-100.d-flex.align-center.justify-between
+                            .input-wrapper.d-flex.align-center.mb-0
+                                span <b>Rate:</b>
+                                select.select-input
+                                    option All Members
+                                    option New Members
+                                    option Female
+                            .photo-raiting-filter__right.d-flex.align-center
+                                .input-wrapper.d-flex.align-center.mb-0
+                                    span <b>From age:</b>
+                                    select.select-input
+                                        option Select...
+                                        option 18
+                                        option 20
+                                        option 22
+                                        option 24
+                                .input-wrapper.d-flex.align-center.mb-0.ml-2.mr-2
+                                    span <b>To:</b>
+                                    select.select-input
+                                        option Select...
+                                        option 18
+                                        option 20
+                                        option 22
+                                        option 24
+                                input(type='submit' value='Go').btn.btn--small.btn--violet.font-600
+                    .photo-raiting-notice.grey-light-bg.font-600.text-center.font-600.mb-1 Please <a href="#" class="pink">Log-In</a> to use photo rating
+                    .photo-for-raiting.mb-3
+                        .photo-for-raiting__top
+                            <div class="models-card__data">
+                            <div class="name d-flex"><span class="icon-star_full yellow"></span> Alex Razersection <sup class="status online"></sup></div>
+                            <div class="type grey">Transsexual (pre-op)</div>
+                            </div>
+
+                        .photo-for-raiting__img
+                            img(src='img/photos/news_1.jpg')
+        include ../includes/rightSidebar.pug
